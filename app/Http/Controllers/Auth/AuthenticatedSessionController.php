@@ -19,6 +19,12 @@ class AuthenticatedSessionController extends Controller
         return view('auth.login');
     }
 
+    protected function redirectTo() 
+    { 
+    return '/dashboard'; // Cambia esta ruta según tus necesidades 
+    } 
+
+
     /**
      * Handle an incoming authentication request.
      */
